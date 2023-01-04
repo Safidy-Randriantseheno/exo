@@ -1,8 +1,8 @@
 insert into team (id_team, name)
 values (1, 'makoko');
 insert into team (id_team, name)
-values (2,'star');
+values (2, 'star');
 insert into team (id_team, name)
-values (3 'bolopix')
+values (3, 'bolopix')
 ;
-alter sequence have_id_have_seq restart with 4;
+alter sequence team_id_team_seq restart with 4;

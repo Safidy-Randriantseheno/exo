@@ -4,4 +4,3 @@ create table play_against
     datetime date,
     stadium varchar
 );
-alter sequence have_id_have_seq restart with 4;
