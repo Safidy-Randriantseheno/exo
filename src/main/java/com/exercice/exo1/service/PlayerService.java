@@ -1,2 +1,18 @@
-package com.exercice.exo1.service;public class PlayerService {
+package com.exercice.exo1.service;
+
+import com.exercice.exo1.model.PlayerEntity;
+import com.exercice.exo1.repository.PlayerRepository;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@AllArgsConstructor
+public class PlayerService {
+    private PlayerRepository player;
+    public List<PlayerEntity> getPlayers() {
+        return player.findAll();
+    }
+
 }
