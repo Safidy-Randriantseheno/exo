@@ -10,9 +10,9 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class PlayerService {
-    private PlayerRepository player;
+    private PlayerRepository Player;
     public List<PlayerEntity> getPlayers() {
-        return player.findAll();
+        return Player.findAll();
     }
 
 }

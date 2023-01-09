@@ -12,8 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 public class Play_againstController {
     private Play_againstService pa;
-    @GetMapping("/pas")
-    public List<Play_againstEntity> getPa(){
+    @GetMapping("/pa")
+    public List<Play_againstEntity> getPa() {
         return pa.getPa();
     }
 }

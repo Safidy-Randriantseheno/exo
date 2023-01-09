@@ -12,9 +12,10 @@ import java.util.List;
 @AllArgsConstructor
 
 public class PlayerController {
-    private PlayerService players;
-    @GetMapping("/pls")
-    public List<PlayerEntity> getPlayers(){
-        return players.getPlayers();
+    private PlayerService Player;
+
+    @GetMapping("/Players")
+    public List<PlayerEntity> getPlayers() {
+        return Player.getPlayers();
     }
 }

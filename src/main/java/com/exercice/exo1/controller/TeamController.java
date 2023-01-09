@@ -12,8 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 public class TeamController {
     private TeamService teams;
-    @GetMapping("teams")
-    public List<TeamEntity> getTeams(){
+    @GetMapping("/teams")
+    public List<TeamEntity> getTeams() {
         return teams.getTeams();
     }
 

@@ -13,7 +13,7 @@ import java.util.List;
 public class SponsorController {
     private SponsorService sponsor;
     @GetMapping("/sponsors")
-    public List<SponsorEntity> getSponsors(){
+    public List<SponsorEntity> getSponsors() {
         return sponsor.getSponsors();
     }
 }
